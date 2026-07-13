@@ -2,7 +2,7 @@
 
 The application consists of a **.NET 8 Web API backend** and a **static frontend**.
 
-Live Demo: https://fjam.github.io/FindThatBook/FindThatBook.Frontend/index.html
+Live Demo: https://fjam.github.io/FindThatBook/FindThatBook.Frontend/dist/index.html
 
 API: https://findthatbook.runasp.net
 
