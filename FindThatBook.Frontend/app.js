@@ -1,5 +1,6 @@
 // API Configuration
-const apiUrl = 'http://localhost:5091';
+//const apiUrl = 'http://localhost:5091'; //Development
+const apiUrl = "https://findthatbook.runasp.net";
 
 // DOM Elements
 const searchForm = document.getElementById('searchForm');
