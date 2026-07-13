@@ -38,6 +38,7 @@ namespace FindThatBook
             }
 
             app.UseCors("AllowAll");
+            app.UseHttpsRedirection();
             app.UseAuthorization();
 
 
