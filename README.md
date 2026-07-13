@@ -50,10 +50,16 @@ The API will start at:
 - `http:localhost:5091`
 - `https://localhost:7038`
 
-### 3. Open the Frontend Static Site
-The frontend is a static web app located in FindThatBook.Frontend.
-- Open index.html directly in any modern browser.
-- By default, it connects directly to the backend API at `http://localhost:5091`.
+### 3. Run the Frontend React Application
+The frontend is a React application built with Vite and located in the [FindThatBook.Frontend](file:///C:/Users/FHome/source/repos/FindThatBook/FindThatBook.Frontend/) folder.
+From the repository root, run:
+```bash
+cd FindThatBook.Frontend
+npm install
+npm run dev
+```
+Open `http://localhost:5173` in your browser.
+- By default, it connects to the local backend API at `http://localhost:5091` when running locally, and shifts to `https://findthatbook.runasp.net` when hosted.
 
 ---
 
