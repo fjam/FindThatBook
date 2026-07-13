@@ -1,78 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find That Book</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find That Book - Library Discovery Search</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="header-container">
-            <div class="logo">
-                <h1>Find That Book</h1>
-            </div>
-            <div class="api-status-container">
-                <span id="apiStatus" class="status-badge status-unknown">
-                    <span class="status-dot"></span>
-                    API Status
-                </span>
-            </div>
-        </div>
-    </header>
-
-    <main>
-        <section class="search-section">
-            <div class="search-container">
-                <h2>Find That Book</h2>
-                
-                <form id="searchForm" class="search-form">
-                    <div class="search-input-wrapper">
-                        <input type="text" id="queryInput" placeholder="Type author, title, keywords, publish year..." required autocomplete="off">
-                        <button type="submit" class="search-btn">
-                            <span>Search</span>
-                            <span>→</span>
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </section>
-
-        <section class="results-section">
-            <div class="results-header hidden" id="resultsHeader">
-                <h3 id="resultsCount">0 Matches Found</h3>
-                <span class="processing-time" id="processingTime"></span>
-            </div>
-
-            <div id="loader" class="loader-container hidden">
-                <div class="spinner"></div>
-                <p id="loaderText">AI is extracting search parameters...</p>
-            </div>
-
-            <div id="errorState" class="error-container hidden">
-                <h4 id="errorTitle">Search Failed</h4>
-                <p id="errorMessage">An unexpected error occurred.</p>
-                <div id="errorAction" class="error-action hidden">
-                    <p class="helper-text">Gemini API key must be configured in the Web API configuration.</p>
-                </div>
-            </div>
-
-            <div id="emptyState" class="empty-container">
-                <p>No Results Found!</p>
-            </div>
-
-            <div id="resultsGrid" class="results-grid hidden"></div>
-        </section>
-    </main>
-
-    <footer>
-      
-    </footer>
-
-    <script src="app.js"></script>
-</body>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
