@@ -43,6 +43,7 @@ namespace FindThatBook
 
 
             app.MapControllers();
+            app.MapGet("/", () => Results.Ok(new { status = "Healthy", message = "Find That Book API is running!" }));
 
             app.Run();
         }
